@@ -1,14 +1,19 @@
 const express = require('express');
-const router = express.Router();
+const User = require('../../models/user');
+//const router = express.Router();
 
-// define the home page route
-router.post('/signup', (req, res) => {
-    let {
+
+const handleSignUp = (req, res) => {
+    const {
         name,
         email,
         password
     } = req.body;
-    res.send('Birds home page');
-})
 
-module.exports = router
+}
+
+
+
+module.exports = {
+    handleSignUp: handleSignUp
+};

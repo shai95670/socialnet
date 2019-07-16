@@ -11,8 +11,8 @@ const UserModelSchema = new Schema({
     password: String,
     posts: Array,
     skills: Array,
-    created: Date,
+    userCreationDate: Date,
 });
 
 //Export function to create "userModel" model class
-module.exports = mongoose.model('userModel', UserModelSchema);
+module.exports = mongoose.model('UserModel', UserModelSchema);
