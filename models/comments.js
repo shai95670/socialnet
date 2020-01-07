@@ -1,14 +1,20 @@
-// user mongo model
-//Require Mongoose
 const mongoose = require('mongoose');
-
-//Define a schema
+const User = require("./user");
 const Schema = mongoose.Schema;
 
 const CommentsModelSchema = new Schema({
-    creator: String,
-    datePosted: Date,
-    commentString: String
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: User
+    },
+    commentCreationDate: {
+        type: Date,
+        default: Date.now
+    },
+    textString: {
+        type: String,
+        required: true
+    },
 });
 
 //Export function to create "userModel" model class

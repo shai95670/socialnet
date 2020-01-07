@@ -1,3 +1,5 @@
 {
-  "mongoURI": "mongodb+srv://shai:a1d998@socialnet-j2oaa.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://shai:a1d998@socialnet-j2oaa.mongodb.net/socialnet?retryWrites=true&w=majority",
+  "clientId": "b5f7e49f60c62552d375",
+  "clientSecret": "e9c319c38838fa6483498802be0588da77bf8001"
 }
